@@ -19,10 +19,16 @@
 
 body {
   background-color: var(--Cream);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 main {
   background-color: var(--White);
+  border-radius: 15px 15px 0 0;
+  overflow: hidden;
 }
 
 img {
@@ -56,16 +62,10 @@ section:last-of-type a > img {
   margin-inline-end: 10px;
 }
 
-@media (width > 400px) {
-  body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-
+@media (width > 500px) {
   main {
     max-width: 600px;
+    border-radius: 15px;
     display: flex;
     align-items: stretch;
   }
